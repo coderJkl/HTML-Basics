@@ -1,16 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>My first html form</title>
+<link rel="stylesheet" href="form_style.css">
+</link>
+</head>
+
+<div id="section">
+<body>
+
 <form id="myForm" onsubmit="return validateForm()">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
-    <br><br>
+  <div class="s1"><label for="name">Name:</label>
+    <input type="text" id="name" name="name" required align="center">
+  </div>
+
+    <div class="s1"><label for="email">Email address:</label>
+    <input type="email" id="email" name="email" required align="right">
+  </div>
   
-    <label for="email">Email address:</label>
-    <input type="email" id="email" name="email" required>
-    <br><br>
-  
-    <label for="phone">Phone number:</label>
-    <input type="tel" id="phone" name="phone" required>
-    <br><br>
-  
+    <div class="s1"><label for="phone">Phone number:</label>
+    <input type="tel" id="phone" name="phone" required align="right">
+    </div>
+
+    <div class="s1">
     <label for="gender">Gender:</label>
     <select id="gender" name="gender" required>
       <option value="">Select</option>
@@ -18,12 +31,19 @@
       <option value="female">Female</option>
       <option value="other">Other</option>
     </select>
-    <br><br>
-  
+  </div>
+
+  <div class="s1">
     <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required>
+  <input type="password" id="password" name="password" required align="right">
+  </div>
     <br><br>
-  
+
+  <div class="s1">
     <input type="submit" value="Submit">
+  </div>
   </form>
-  
+
+</body>
+</div>
+  </html>
